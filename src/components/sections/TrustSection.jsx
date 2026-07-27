@@ -25,7 +25,7 @@ export function TrustSection() {
   return (
     <section id="services" className="py-20 lg:py-32 bg-[#112236]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-12 lg:gap-16 lg:items-center">
           
           {/* Left: Image Collage */}
           <motion.div 
