@@ -25,7 +25,7 @@ export function TrustSection() {
   return (
     <section id="services" className="py-20 lg:py-32 bg-[#112236]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-12 lg:gap-16 lg:items-center">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 lg:items-center">
           
           {/* Left: Image Collage */}
           <motion.div 
@@ -33,16 +33,16 @@ export function TrustSection() {
             initial={{ opacity: 0, x: -30 }}
             animate={controls}
             variants={{ visible: { opacity: 1, x: 0, transition: { duration: 0.8 } } }}
-            className="relative grid grid-cols-2 gap-4 h-[500px] sm:h-[600px]"
+            className="relative grid grid-cols-2 gap-4 h-[400px] sm:h-[500px] lg:h-[600px] w-full"
           >
-            <div className="col-span-1 h-full rounded-2xl overflow-hidden border border-[#1E3A5F]">
+            <div className="col-span-1 h-full min-h-0 rounded-2xl overflow-hidden border border-[#1E3A5F]">
               <ImageWithSkeleton src={images.trustLarge} alt="Team collaboration" className="w-full h-full" />
             </div>
-            <div className="col-span-1 grid grid-rows-2 gap-4 h-full">
-              <div className="rounded-2xl overflow-hidden border border-[#1E3A5F]">
+            <div className="col-span-1 grid grid-rows-2 gap-4 h-full min-h-0">
+              <div className="rounded-2xl overflow-hidden border border-[#1E3A5F] min-h-0 h-full">
                 <ImageWithSkeleton src={images.trustSmall1} alt="Design process" className="w-full h-full" />
               </div>
-              <div className="rounded-2xl overflow-hidden border border-[#1E3A5F]">
+              <div className="rounded-2xl overflow-hidden border border-[#1E3A5F] min-h-0 h-full">
                 <ImageWithSkeleton src={images.trustSmall2} alt="Digital mockup" className="w-full h-full" />
               </div>
             </div>
