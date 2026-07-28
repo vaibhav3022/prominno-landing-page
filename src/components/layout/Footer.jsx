@@ -1,19 +1,45 @@
-import React from 'react';
-import { FaXTwitter, FaLinkedinIn, FaInstagram, FaFacebookF } from 'react-icons/fa6';
+import React from "react";
+import {
+  FaXTwitter,
+  FaLinkedinIn,
+  FaInstagram,
+  FaFacebookF,
+} from "react-icons/fa6";
 
 export function Footer() {
   return (
     <footer className="bg-[#0D1B2A] border-t border-[#1E3A5F] pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Floating Contact Box */}
+        <div className="max-w-5xl mx-auto px-8 py-10 md:py-14 bg-[#1E3A5F] rounded-3xl shadow-2xl relative z-10 -mt-28 mb-16 border border-[#F59E0B]/20">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+            <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#F8FAFC] leading-tight text-center md:text-left">
+              Need More Information?
+              <span className="text-sm md:text-base font-normal text-[#94A3B8] mt-3 block">
+                Write your concern to us and our specialist will get back to
+                you.
+              </span>
+            </p>
+            <div className="flex-shrink-0">
+              <button className="bg-[#F59E0B] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#E59100] transition-all duration-300 shadow-lg hover:shadow-[#F59E0B]/20">
+                Contact Us
+              </button>
+            </div>
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
-          
           {/* Brand Col */}
           <div className="lg:col-span-2">
-            <a href="#" className="text-2xl font-bold text-[#F8FAFC] tracking-tight mb-4 inline-block">
+            <a
+              href="#"
+              className="text-2xl font-bold text-[#F8FAFC] tracking-tight mb-4 inline-block"
+            >
               Prominno<span className="text-[#F59E0B]">.</span>
             </a>
             <p className="text-[#94A3B8] max-w-sm mb-6 leading-relaxed">
-              Great design is invisible. We build digital experiences that feel completely natural, helping your business grow globally.
+              Great design is invisible. We build digital experiences that feel
+              completely natural, helping your business grow globally.
             </p>
           </div>
 
@@ -21,37 +47,107 @@ export function Footer() {
           <div>
             <h4 className="text-[#F8FAFC] font-semibold mb-6">Company</h4>
             <ul className="space-y-4">
-              <li><a href="#" className="text-[#94A3B8] hover:text-[#F59E0B] transition-colors">About Us</a></li>
-              <li><a href="#" className="text-[#94A3B8] hover:text-[#F59E0B] transition-colors">Careers</a></li>
-              <li><a href="#" className="text-[#94A3B8] hover:text-[#F59E0B] transition-colors">Partners</a></li>
-              <li><a href="#" className="text-[#94A3B8] hover:text-[#F59E0B] transition-colors">Contact</a></li>
+              <li>
+                <a
+                  href="#"
+                  className="text-[#94A3B8] hover:text-[#F59E0B] transition-colors"
+                >
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-[#94A3B8] hover:text-[#F59E0B] transition-colors"
+                >
+                  Careers
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-[#94A3B8] hover:text-[#F59E0B] transition-colors"
+                >
+                  Partners
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-[#94A3B8] hover:text-[#F59E0B] transition-colors"
+                >
+                  Contact
+                </a>
+              </li>
             </ul>
           </div>
-          
+
           <div>
             <h4 className="text-[#F8FAFC] font-semibold mb-6">Services</h4>
             <ul className="space-y-4">
-              <li><a href="#" className="text-[#94A3B8] hover:text-[#F59E0B] transition-colors">UI/UX Design</a></li>
-              <li><a href="#" className="text-[#94A3B8] hover:text-[#F59E0B] transition-colors">Web Development</a></li>
-              <li><a href="#" className="text-[#94A3B8] hover:text-[#F59E0B] transition-colors">App Development</a></li>
-              <li><a href="#" className="text-[#94A3B8] hover:text-[#F59E0B] transition-colors">Brand Strategy</a></li>
+              <li>
+                <a
+                  href="#"
+                  className="text-[#94A3B8] hover:text-[#F59E0B] transition-colors"
+                >
+                  UI/UX Design
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-[#94A3B8] hover:text-[#F59E0B] transition-colors"
+                >
+                  Web Development
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-[#94A3B8] hover:text-[#F59E0B] transition-colors"
+                >
+                  App Development
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-[#94A3B8] hover:text-[#F59E0B] transition-colors"
+                >
+                  Brand Strategy
+                </a>
+              </li>
             </ul>
           </div>
 
           {/* Socials Col */}
           <div>
-            <h4 className="text-[#F8FAFC] font-semibold mb-6">Connect with us</h4>
+            <h4 className="text-[#F8FAFC] font-semibold mb-6">
+              Connect with us
+            </h4>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-[#112236] flex items-center justify-center text-[#94A3B8] hover:bg-[#F59E0B] hover:text-[#0D1B2A] transition-all duration-300">
+              <a
+                href="#"
+                className="w-10 h-10 rounded-full bg-[#112236] flex items-center justify-center text-[#94A3B8] hover:bg-[#F59E0B] hover:text-[#0D1B2A] transition-all duration-300"
+              >
                 <FaXTwitter className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-[#112236] flex items-center justify-center text-[#94A3B8] hover:bg-[#F59E0B] hover:text-[#0D1B2A] transition-all duration-300">
+              <a
+                href="#"
+                className="w-10 h-10 rounded-full bg-[#112236] flex items-center justify-center text-[#94A3B8] hover:bg-[#F59E0B] hover:text-[#0D1B2A] transition-all duration-300"
+              >
                 <FaLinkedinIn className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-[#112236] flex items-center justify-center text-[#94A3B8] hover:bg-[#F59E0B] hover:text-[#0D1B2A] transition-all duration-300">
+              <a
+                href="#"
+                className="w-10 h-10 rounded-full bg-[#112236] flex items-center justify-center text-[#94A3B8] hover:bg-[#F59E0B] hover:text-[#0D1B2A] transition-all duration-300"
+              >
                 <FaInstagram className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-[#112236] flex items-center justify-center text-[#94A3B8] hover:bg-[#F59E0B] hover:text-[#0D1B2A] transition-all duration-300">
+              <a
+                href="#"
+                className="w-10 h-10 rounded-full bg-[#112236] flex items-center justify-center text-[#94A3B8] hover:bg-[#F59E0B] hover:text-[#0D1B2A] transition-all duration-300"
+              >
                 <FaFacebookF className="w-5 h-5" />
               </a>
             </div>
@@ -59,10 +155,16 @@ export function Footer() {
         </div>
 
         <div className="border-t border-[#1E3A5F] pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-[#94A3B8]">
-          <p>&copy; {new Date().getFullYear()} Prominno. All rights reserved.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Prominno. All rights reserved.
+          </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="hover:text-[#F8FAFC] transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-[#F8FAFC] transition-colors">Terms of Service</a>
+            <a href="#" className="hover:text-[#F8FAFC] transition-colors">
+              Privacy Policy
+            </a>
+            <a href="#" className="hover:text-[#F8FAFC] transition-colors">
+              Terms of Service
+            </a>
           </div>
         </div>
       </div>
