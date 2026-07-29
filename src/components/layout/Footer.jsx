@@ -8,10 +8,11 @@ import {
 
 export function Footer() {
   return (
-    <footer className="bg-[#0D1B2A] border-t border-[#1E3A5F] pt-16 pb-8">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Floating Contact Box */}
-        <div className="max-w-5xl mx-auto px-8 py-10 md:py-14 bg-[#1E3A5F] rounded-3xl shadow-2xl relative z-10 -mt-28 mb-16 border border-[#F59E0B]/20">
+    <footer className="bg-[#0D1B2A] border-t border-[#1E3A5F] pt-32 md:pt-40 pb-8 relative">
+      
+      {/* Floating Contact Box - Perfectly Half & Half */}
+      <div className="absolute top-0 left-0 right-0 -translate-y-1/2 px-4 sm:px-6 lg:px-8 z-20 w-full">
+        <div className="max-w-5xl mx-auto px-8 py-10 md:py-14 bg-gradient-to-br from-[#1E3A5F] to-[#112236] rounded-3xl shadow-2xl border border-[#F59E0B]/30">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#F8FAFC] leading-tight text-center md:text-left">
               Need More Information?
@@ -27,6 +28,9 @@ export function Footer() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
           {/* Brand Col */}

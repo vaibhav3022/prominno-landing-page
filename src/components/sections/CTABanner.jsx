@@ -9,7 +9,7 @@ export function CTABanner() {
 
   return (
     <section id="contact" className="bg-[#112236] border-y border-[#1E3A5F]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-32 md:pb-40">
         <motion.div 
           ref={ref}
           initial={{ opacity: 0, y: 30 }}
