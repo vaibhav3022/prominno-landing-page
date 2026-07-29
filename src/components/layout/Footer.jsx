@@ -12,17 +12,17 @@ export function Footer() {
       
       {/* Floating Contact Box - Perfectly Half & Half */}
       <div className="absolute top-0 left-0 right-0 -translate-y-1/2 px-4 sm:px-6 lg:px-8 z-20 w-full">
-        <div className="max-w-5xl mx-auto px-8 py-10 md:py-14 bg-gradient-to-br from-[#1E3A5F] to-[#112236] rounded-3xl shadow-2xl border border-[#F59E0B]/30">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-            <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#F8FAFC] leading-tight text-center md:text-left">
+        <div className="max-w-5xl mx-auto px-6 sm:px-8 py-8 md:py-14 bg-gradient-to-br from-[#1E3A5F] to-[#112236] rounded-3xl shadow-2xl border border-[#F59E0B]/30">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8">
+            <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#F8FAFC] leading-tight text-center md:text-left">
               Need More Information?
-              <span className="text-sm md:text-base font-normal text-[#94A3B8] mt-3 block">
+              <span className="text-xs sm:text-sm md:text-base font-normal text-[#94A3B8] mt-2 sm:mt-3 block">
                 Write your concern to us and our specialist will get back to
                 you.
               </span>
             </p>
-            <div className="flex-shrink-0">
-              <button className="bg-[#F59E0B] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#E59100] transition-all duration-300 shadow-lg hover:shadow-[#F59E0B]/20">
+            <div className="flex-shrink-0 w-full md:w-auto">
+              <button className="w-full md:w-auto bg-[#F59E0B] text-white px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-[#E59100] transition-all duration-300 shadow-lg hover:shadow-[#F59E0B]/20">
                 Contact Us
               </button>
             </div>
